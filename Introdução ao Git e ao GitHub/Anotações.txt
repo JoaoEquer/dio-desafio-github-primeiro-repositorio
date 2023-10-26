@@ -1,0 +1,22 @@
+Link para download do Git: https://git-scm.com/downloads
+
+O Git Bash é um Terminal extendido para otmizar o uso do Git.
+
+Atalhos do Git.
+
+Git - Versionador de codigo, cria pastas ( Branch )
+git add . ( preparar modificaçoes para o commit )
+git commit -m ( enviar modificaçoes para pasta local do projeto )
+git push ( enviar arquivos para pasta final do projeto )
+git pull ( atualizar o meu projeto vindo do GITHUB ) 
+git branch ( criar nova branch ) 
+
+
+Atalhos IDE.
+
+Alt +  ^ / v = move a linha de codigo para onde quiser
+Alt + Shift + v = copia a linha de cima 
+Ctrl + D = renomea todos com o mesmo nome
+F2 = renomeia todos os lugares aonde estava sendo importado 
+Ctrl + Shift + p = atalho de ajuda das extensões instaladas 
+ALT + Z = quebra automatica de texto
