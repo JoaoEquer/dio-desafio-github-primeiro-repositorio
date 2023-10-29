@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario cadastro</title>
+</head>
+<body>
+    <form method="get">
+        <h3>Você selecionou: Pizza de Calabresa</h3>
+        <p> Quais Opcionais voce deseja?</p>
+        <input type="checkbox" name="opcional[]" value="queijo"> + quejio <br>
+        <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+        <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona <br>
+        <p> Borda recheada?</p>
+        <input type="radio" name="borda" value="sim">Sim<br>
+        <input type="radio" name="borda" value="Não">Não<br>
+        <p>bebida</p>
+        <input type="radio" name="bebida" value="suco">Suco<br>
+        <input type="radio" name="bebida" value="Refrigerante">Refrigerante<br>
+        <input type="radio" name="bebida" value="agua">Água<br>
+        <input type="radio" name="bebida" value="nenhum">Nenhum<br> <br>
+
+        <button type="submit">Enviar pedido</button>
+    </form>
+<form onsubmit="" method="get">
+    <label>Nome:</label><input type="text" name="name"><br>
+    <label>Cargo:</label>
+    <select name="role">
+        <option value="">Selecione o cargo</option>
+        <option value="gerente">Gerante</option>
+        <option value="diretor">Diretor</option>
+        <option value="presidente">Presidente</option>
+    </select>
+    <br>
+    <label>Assunto:</label><input  type="text" name="subject"><br>
+    <button type="submit">Enviar</button>
+</form>
+</body>
+</html>
