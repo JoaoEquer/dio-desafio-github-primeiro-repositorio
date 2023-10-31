@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trilha de CSS</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        /*
+        * SELETORES: definem em quais elementos nós vamos aplicar o CSS
+        * 1. Seletor de Tag/Tipo
+        * 2. Seletor de Id
+        * 3. Seletor de Classes
+        * 4. Seletor Universal
+        * 5. Seletor de atributo
+         */
+        * {
+            font-weight: bold;
+        }
+
+        .seletores-mais-comuns {
+            background: chocolate;
+            color: black;
+        }
+
+        .texto-maiusculo {
+            text-transform: uppercase;
+        }
+        h1, [id^="botao"]{
+            background: darkolivegreen;
+        }
+    </style>
+</head>
+<body>
+<h1>Seletores CSS</h1>
+<p id="texto-boas-vindas">Bem-vindo!</p>
+<p id="explicacao-seletores">No CSS nós possuímos os seletores por ID</p>
+<div>
+    <ul>
+        <li class="seletores-mais-comuns"><b>Seletor por Tipo:</b> Busca elementos por uma tag HTML específica</li>
+        <li class="seletores-mais-comuns"><b>Seletor por ID (#):</b> Busca elementos através do atributo "id"</li>
+        <li class="seletores-mais-comuns texto-maiusculo"><b>Seletor por Classe (.):</b> Busca elementos através do
+            atributo "class"
+        </li>
+        <li class="seletores-mais-comuns texto-maiusculo"><b>Seletor Universal (*):</b> Seleciona todos os elementos
+            HTML
+        </li>
+        <li class="seletores-mais-comuns texto-maiusculo"><b>Seletor de Atributo ([atrib]):</b> Seleciona elementos que
+            possuem um atributo específico em nosso
+            documento HTML e conseguimos também buscar atributos com um valor específico
+        </li>
+    </ul>
+</div>
+<h1>Agrupamento de Seletores</h1>
+<p>Podemos aplicar as mesmas regras CSS para vários seletores diferentes. Para isso,podemos separar os seletores
+    utilizando uma vírgula (,)</p>
+<div>Assim, não precisamos ficar copiando e colocando os mesmos códigos para todos, nós podemos fazer um só bloco de CSS
+    e reutilizar as mesmas regras!
+    <br><br>
+    <a id="link-referencia" href="#">Clique para ver a documentação</a>
+    <br><br>
+    <a id="link-suporte" href="#">Clique para entrar em contato</a>
+    <br><br>
+    <a id="botao-voltar" href="#">Voltar</a>
+    <br><br>
+    <button id="botao-fechar">Fechar página</button>
+</div>
+</body>
+</html>
