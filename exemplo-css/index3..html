@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trilha de CSS</title>
+    <style>
+        /*
+            Combinadores: qual tipo de relação entre 2 seletores.
+            1. Combinador descendente (espaço)
+            2. Combinador filho (>)
+            3. Combinador irmão adjacente (+)
+            4. Combinador irmão em geral (~)
+
+           [SELETOR] [COMBINADOR] [SELETOR]
+         */
+        li{
+            color: mediumslateblue;
+        }
+        li li{
+            color: darkkhaki;
+        }
+        #lista-01 li {
+            background: lightcoral;
+        }
+        .fundo-verde li {
+            background: lightcoral;
+        }
+        .fundo-azul li {
+            background: lightcoral;
+        }
+        div p{
+            background: lightcoral;
+        }
+        div > p {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="fundo-verde" id="lista-01">
+            <div>Item 1</div>
+            <ul id="sublista-01">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-verde" id="lista-02">
+            <div>Item 2</div>
+            <ul id="sublista-02">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-azul" id="lista-03">
+            <div>Item 3</div>
+            <ul id="sublista-03">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </ul>
+    <div>
+        <p>Parágrafo 1 dentro da div</p>
+        <p>Parágrafo 2 dentro da div</p>
+        <span>
+            <p>Parágrafo 3 dentro da div, dentro do span </p>
+        </span>
+    </div>
+
+    <p>Parágrafo 4, fora da div</p>
+    <p>Parágrafo 5, fora da div</p>
+</body>
+</html>
